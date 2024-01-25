@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decodi</title>
+  <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+  <header class="container">
+    <img src="./assets/images/imagem.svg" class="iconLogo"alt="Imagem de um menino de azul sentado">
+    <p class="header__logo__name">Decodi</p>
+  </header>
+
+  <main class="container main__input">
+    <div class="">
+      <textarea class="main__box__input" id="text" placeholder="Digite seu texto aqui"></textarea>
+      <div class="main__button">
+        <input type="button" class="button__input"  id="main__button__decodificar" value="Criptografar">
+        <input type="button" class="button__input" id="main__button__descriptografar" value="Descriptografar">
+      </div>
+    </div>
+
+    <div class="main__output">
+      <div class="main__output__float">
+        <img src="./assets/images/cadeado.png" class="imgCadeado" alt="">
+        <p class="main__output__float___message">Nenhuma mensagem encontrada</p>
+        <input type="button" class="main__output__button" value="Copiar">
+      </div>  
+      <textarea class="main__box__output" disabled>
+      </textarea>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Desenvolvido por Angélica Shigematsu</p>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>
