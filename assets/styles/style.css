@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Roboto:ital,wght@0,400;1,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --firstColor: #CAD6FF;
+  --secondColor: #15345B;
+  --thirdColor: #495057;
+  --messageColor: #343A40;
+}
+
+body {
+  background-color: var(--firstColor);
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.button__input, .main__output__button {
+  border-radius: 10px;
+  padding: 2% 14% 2% 14%;
+}
+
+.container {
+  width: 1050px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  padding-top: 2vh;
+  align-items: center;
+}
+
+.iconLogo {
+  width: 5%;
+}
+
+.imgCadeado {
+  left: 40%;
+  width: 20%;
+}
+
+main{
+  padding-bottom: 3%;
+}
+
+.main__input {
+  display: flex;
+  gap: 80px;
+}
+
+.main__box__input {
+  background-color: var(--firstColor);
+  border: 0;
+  width: 50vw;
+  height: 70vh;
+  color: var(--secondColor);
+}
+
+.main__output {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: -18%;
+}
+
+.main__box__input, .main__box__output {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+.main__box__output  {
+  border-radius: 3%;
+  background-color: #ffffff;
+  border: 0 solid #ffffff;
+  padding: 10%;
+  color: var(--thirdColor);
+  width: 20vw;
+  height: 75vh;
+}
+
+.main__output__float {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  left: 6%;
+  top: 50%;
+}
+
+.main__output__float___message {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--messageColor);
+}
+
+.main__button {
+  display: flex;
+  gap: 4%;
+}
+
+.header__logo__name {
+    font-family: 'Leckerli One', cursive;
+    font-size: 1.4rem;
+}
+footer {
+  background-color: var(--secondColor);
+  color: #ffffff;
+  height: 6vh;
+  text-align: center;
+  padding-top: 2vh;
+}
+
+textarea::placeholder {
+  color: var(--secondColor);
+}
+
+textarea {
+  font-size: 1.5rem;
+  font-family: Inter, Arial, sans-serif;
+}
+textarea: select{
+  outline: 0;
+  border: 0 solid #ffffff;
+}
+
+#main__button__decodificar {
+  background-color: var(--secondColor);
+  color: #ffffff;
+}
+
+#main__button__descriptografar, .main__output__button  {
+  color: var(--secondColor);
+}
+
+.main__output__button {
+  position: relative;
+  top: 210px;
+  padding: 4% 40% 4% 40%;
+  visibility: hidden;
+}
