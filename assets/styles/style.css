@@ -9,6 +9,7 @@
   --secondColor: #15345B;
   --thirdColor: #495057;
   --messageColor: #343A40;
+  --messageDescription: #495057;
 }
 
 body {
@@ -51,6 +52,17 @@ main{
   gap: 80px;
 }
 
+.main__input__alert {
+  color: var(--messageDescription);
+}
+
+.main__input__exclamation {
+  border-radius: 50%;
+  background-color: gold;
+  padding: 0 1% 0 1%;
+  width: 4%;
+}
+
 .main__box__input {
   background-color: var(--firstColor);
   border: 0;
@@ -63,7 +75,7 @@ main{
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-top: -18%;
+  margin-top: -20%;
 }
 
 .main__box__input, .main__box__output {
@@ -79,7 +91,7 @@ main{
   padding: 10%;
   color: var(--thirdColor);
   width: 20vw;
-  height: 75vh;
+  height: 70vh;
 }
 
 .main__output__float {
@@ -88,14 +100,21 @@ main{
   position: relative;
   align-items: center;
   justify-content: center;
-  left: 6%;
-  top: 50%;
+  left: 20%;
+  top: 60%;
+  gap: 16px;
+  width: 70%;
 }
 
 .main__output__float___message {
   text-align: center;
   font-size: 1.5rem;
   color: var(--messageColor);
+}
+
+.main__output__message__description {
+  color: var(--messageDescription);
+  font-size: 1rem;
 }
 
 .main__button {
