@@ -8,7 +8,7 @@ const criptografia = ["ai", "enter", "imes", "ober", "ufat"]
 
 document.addEventListener("click", function(e) {
   e.preventDefault();
-  let nameButton = event.target.value;
+  let nameButton = e.target.value;
 
   switch(nameButton) {
     case "Criptografar": 
@@ -35,7 +35,7 @@ document.addEventListener("click", function(e) {
         }
       })
  
-      printTextOutput(inputTextModify);
+      printOutputTextArea(inputTextModify);
       break;
       case "Descriptografar": 
       let cont = 0;
@@ -68,11 +68,9 @@ document.addEventListener("click", function(e) {
           } else {
             inputTextModify[cont] = textInput[i];
           }
-          console.log(i)
           cont++
       }
-      printTextOutput(inputTextModify);
-      console.log(inputTextModify)
+      printOutputTextArea(inputTextModify);
       break;
   }
 });
@@ -93,4 +91,26 @@ const printTextOutput = (text) => {
 const hasTextOuptup = (text) => {
   let showMessage = text.length ? 'hidden': 'visible'
   document.getElementsByClassName("main__output__float")[0].style.visibility = showMessage;
+}
+
+const isVisibleCopyButton = (text) => {
+  let showButton = text.length ? 'visible': 'hidden';
+  document.getElementsByClassName("main__output__button")[0].style.visibility = showButton;
+}
+
+const copyText = () => {
+  var content = document.getElementById('textOutput').innerHTML;
+  // Selecionar o texto dentro do textarea
+  navigator.clipboard.writeText(content)
+      .then(() => {console.log('Text copied to clipboard...')})
+      .catch(err => {
+        console.log('Something went wrong', err);
+      })
+
+}
+
+const printOutputTextArea = (inputTextModify) => {
+  printTextOutput(inputTextModify);
+
+  isVisibleCopyButton(inputTextModify);
 }
