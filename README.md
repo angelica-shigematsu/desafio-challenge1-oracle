@@ -1,7 +1,9 @@
 # Desafio da Oracle
 - Criar página de criptografar frases
 
-<img src="./assets/images/imagemAluraOracle.png">
+<img src="./assets/images/imagemTela.png">
+
+Site: <a href="https://angelica-shigematsu-challenge1-oracle.vercel.app/" target="_blank">ver na web</a>
 
 ##  Regras: 
 As "chaves" de criptografia que utilizaremos são:</br>
