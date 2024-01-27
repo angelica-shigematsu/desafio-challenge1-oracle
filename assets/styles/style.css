@@ -14,7 +14,6 @@
 
 body {
   background-color: var(--firstColor);
-  box-sizing: border-box;
   height: 100vh;
 }
 
@@ -26,6 +25,7 @@ body {
 .container {
   width: 1050px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 header {
@@ -128,10 +128,13 @@ main{
 }
 footer {
   background-color: var(--secondColor);
-  color: #ffffff;
   height: 6vh;
-  text-align: center;
   padding-top: 2vh;
+}
+
+.footer__text {
+  text-align: center;
+  color: #ffffff;
 }
 
 textarea::placeholder {
@@ -161,4 +164,59 @@ textarea: select{
   top: 210px;
   padding: 4% 40% 4% 40%;
   visibility: hidden;
+}
+
+@media(max-width: 1270px) {
+  .main__output__float___message  {
+    font-size: 1.2rem;
+  }
+  .main__output__message__description {
+    font-size: 0.8rem;
+  }
+  .main__output__float {
+    left: 7%;
+  }
+}
+
+@media(max-width: 700px) {
+  .container {
+    width: 90%;
+    padding: 5%;
+  }
+
+  .main__input {
+    flex-direction: column;
+  }
+
+  .main__box__input {
+    height: 200px;
+    width: 100%;
+  }
+
+  .main__box__output {
+    width: 80%;
+    height: 40%;
+  }
+
+  .main__button {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .main__output__float {
+    position: relative;
+    top: 145px;
+  }
+
+  .imgCadeado {
+    visibility: hidden;
+  }
+
+  .main__output__float___message {
+    font-size: 0.8rem;
+  }
+
+  .main__output__message__description{
+    font-size: 0.5rem;
+  }
+
 }
