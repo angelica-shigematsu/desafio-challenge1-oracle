@@ -161,7 +161,7 @@ textarea: select{
 
 .main__output__button {
   position: relative;
-  top: 210px;
+  top: 100px;
   padding: 4% 40% 4% 40%;
   visibility: hidden;
 }
@@ -219,4 +219,7 @@ textarea: select{
     font-size: 0.5rem;
   }
 
+  footer {
+    height: 8vh;
+  }
 }
