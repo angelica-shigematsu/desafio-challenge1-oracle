@@ -16,6 +16,8 @@ document.addEventListener("click", function(e) {
 
       textInput = separateInArray();
 
+      hasTextOuptup(textInput);
+
       textInput.map((letter, index) => {
 
         if (letter == "a") {
@@ -39,7 +41,9 @@ document.addEventListener("click", function(e) {
       let cont = 0;
         cleanText();
 
-        textInput = separateInArray() 
+        textInput = separateInArray();
+
+        hasTextOuptup(textInput);
 
         for(let i = cont; i < textInput.length; i++) {
 
@@ -86,3 +90,7 @@ const printTextOutput = (text) => {
   document.getElementById("textOutput").innerHTML = text.join("");
 }
 
+const hasTextOuptup = (text) => {
+  let showMessage = text.length ? 'hidden': 'visible'
+  document.getElementsByClassName("main__output__float")[0].style.visibility = showMessage;
+}
