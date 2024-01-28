@@ -10,6 +10,8 @@
   --thirdColor: #495057;
   --messageColor: #343A40;
   --messageDescription: #495057;
+  --buttonColorHover: #002244;
+  --buttonColorHover2: #d8dfe7;
 }
 
 body {
@@ -74,6 +76,7 @@ main{
 .main__output {
   display: flex;
   flex-direction: column;
+  align-items: center;
   position: relative;
   margin-top: -20%;
 }
@@ -100,7 +103,6 @@ main{
   position: relative;
   align-items: center;
   justify-content: center;
-  left: 20%;
   top: 60%;
   gap: 16px;
   width: 70%;
@@ -159,11 +161,22 @@ textarea: select{
   color: var(--secondColor);
 }
 
+#main__button__descriptografar:hover {
+  background-color: var(--buttonColorHover2);
+  cursor: pointer;
+}
+
+#main__button__decodificar:hover {
+  background-color: var(--buttonColorHover);
+  cursor: pointer;
+}
+
 .main__output__button {
   position: relative;
-  top: 100px;
+  top: -6%;
   padding: 4% 40% 4% 40%;
   visibility: hidden;
+  cursor: pointer;
 }
 
 @media(max-width: 1270px) {
@@ -195,7 +208,7 @@ textarea: select{
 
   .main__box__output {
     width: 80%;
-    height: 40%;
+    height: 160px;
   }
 
   .main__button {
@@ -221,5 +234,10 @@ textarea: select{
 
   footer {
     height: 8vh;
+  }
+
+  .main__output__button {
+    display: flex;
+    justify-content: flex-end;
   }
 }
